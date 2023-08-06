@@ -363,22 +363,18 @@ h2{
 
 @media (max-width: 768px) { /*book_detail*/
     .book_detail, .description {
-        display: block;
-        position: relative;
-        padding: 15px 20px;
+        flex-direction: column
     }
     .book_detail img{
         margin-right: 0px;
-
     }
     .sub_img {
-        display: flex;
-        justify-content: flex-start;     
+        display: flex;  
         flex-wrap: nowrap; 
     }
     .sub_img img{
-        width: 100px;
         height: auto;
+        max-width: 100px;
         margin: 0px;
     }
 }
