@@ -1,0 +1,386 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Nguyen Anh Tu
+  ID: s3975032
+  Acknowledgement: https://www.thriftbooks.com/ (book information) 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2EAD3;
+    min-height: 100vh;
+}
+
+/*header*/
+.logo img {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #3F2305;
+    color: white;
+    padding: 5px 20px;
+    margin-bottom: 80px;
+    max-width: inherit;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+}
+
+.menu a:hover{
+    color: #E5890A;
+}
+ 
+.logo {
+    flex: 1;
+}
+
+.toggle  {  
+    font-size: 30px;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li{
+    padding: 15px 10px;
+}
+
+/*main*/
+main {
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0 100px 0;  
+}
+
+.category {
+    background-color: white;
+    width: 250px;
+}
+
+.category img {
+    width: 250px;
+    height: 300px;
+    transition: opacity 0.3s;
+}
+
+.category img:hover {
+    opacity: 0.7;
+}
+
+.category a{
+    cursor: pointer;
+}
+
+.category a:hover{
+    text-decoration: underline;
+}
+
+.category h3{
+    text-align: center;
+}
+
+.category p{
+    padding-left: 10px;
+}
+
+.money{
+    color: red;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    margin-bottom: 0px;
+    background-color: #3F2305;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top:100%;
+    max-width: inherit;
+}
+
+.Info-footer {
+    margin-right: 30px;
+    padding: 20px 0px;
+}
+
+.Info-footer ul {
+    list-style: none;
+}
+
+.Info-footer a{
+    text-decoration: none;
+    color: white;
+}
+.Info-footer a:hover{
+    color: #E5890A;
+}
+
+.social-link a{
+    color: white;
+    padding: 5px;
+}
+
+
+/*Detail page*/
+.book_detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.book_detail img{
+    width: 300px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+.sub_img img{
+    width: 200px;
+    height: 150px;
+    display: block;
+    padding: 5px;
+    margin-right: 40px;
+    transition: opacity 0.3s;
+}
+
+.sub_img img:hover{
+    opacity: 0.7;
+}
+
+.detail {
+    flex: 1;
+}
+
+.detail h1{
+    font-size: 50px;
+    margin: 5px 0;
+}
+
+.detail p{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.detail_bt{
+    padding: 10px 25px;
+    width: 150px;
+    border: none;
+    transition: 1s;
+    background-color: #fc3;
+    border-radius: 5px;
+}
+
+.detail button:hover{
+    color: #E5890A;
+}
+
+.description{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.description h1{
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+/*Breadscrumbs*/
+.breadscrumbs_container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.breadscrumbs {
+    list-style: none;
+}
+
+.breadscrumbs li {
+    display: inline-block;
+}
+
+.breadscrumbs li:not(:last-of-type)::after {
+    content: '>';
+    margin: 0 5px;
+}
+
+.breadscrumbs li {
+    text-decoration: none;
+}
+
+.breadscrumbs li a{
+    font-size: 20px;
+}
+
+.breadscrumbs_target a:hover {
+    text-decoration: underline;
+}
+
+.breadscrumbs_target a{
+    color: #E5890A;
+}
+
+/*contact*/
+.background_contact {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.background_contact h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input_group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input_group input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+    width: 300px;
+    height: 30px;
+    background-color: #EDEDED;
+}
+
+.input_group label,p{
+    margin-bottom: 5px;
+}
+
+.input_group textarea{
+    height: 100px;
+}
+
+.contact_subre {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact_subre input {
+    padding: 5px 10px;
+    background-color: #EDEDED;
+    margin: 0 8px;
+}
+
+/*media*/
+
+@media (max-width: 768px) { /*header*/
+    .navbar {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+        flex-direction: column;  
+        align-items: flex-start;
+    }
+    .menu li {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .toggle {
+        display: block;
+        position: absolute;
+        top:30px;
+        right: 20px;
+    }
+    .toggle:hover+.menu {
+        display: block;
+    }
+    .menu:hover{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) { /*main*/
+    .container {
+        flex-direction: column;
+        padding: 0 30px;
+        align-items: center;
+    }
+    .category {
+        margin-bottom: 40px;
+    }
+    .container iframe {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) { /*footer*/
+    .footer {
+        flex-wrap: wrap;
+    }
+    .Info-footer {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) { /*book_detail*/
+    .book_detail, .description {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .sub_img {
+        display: flex;
+        justify-content: flex-start;      
+    }
+    .sub_img img{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input_group {
+      flex-direction: column; 
+      align-items: center; 
+    }
+}
+  
+
+
+
+  

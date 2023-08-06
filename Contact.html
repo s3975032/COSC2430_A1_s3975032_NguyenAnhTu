@@ -1,0 +1,129 @@
+<!-- RMIT University Vietnam -->
+<!-- Course: COSC2430 Web Programming -->
+<!-- Semester: 2023A -->
+<!-- Assessment: Assignment 1 -->
+<!-- Author: Nguyen Anh Tu -->
+<!-- ID: s3975032 -->
+<!-- Acknowledgement: https://www.thriftbooks.com/ (book information) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="bookstore_logo.jpeg" alt="bookstore_logo"></a></div>     
+            <div class="toggle">☰</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Fiction.html">Fiction</a></li>
+                <li><a href="Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="background_contact">
+            <h1>Contact Us</h1>
+            <form action="" method="post">
+                <div class="input_group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>                      
+                </div>
+                <div class="input_group">
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="0912345678" required>
+                </div>
+                <div class="input_group">
+                    <label for="email">Email Id:</label>
+                    <input type="email" name="email" id="email" placeholder="s1234567@rmit.edu.vn" required>
+                </div>
+                <div class="input_group">
+                    <label for="cont_purp">Contact Purpose:</label>
+                    <select name="cont_purp" id="cont_purp">
+                        <option value="">--Please choose an option--</option>
+                        <option value="sell_books">I want to sell books</option>
+                        <option value="buy_books">I want to buy books</option>
+                    </select>                                 
+                </div>
+                <div class="input_group">
+                    <p>Contact Preference:</p>
+                    <div>
+                        <input type="checkbox" name="cont_pref" value="email" id="cont_pref1"> 
+                        <label for="cont_pref1">By Emails</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cont_pref" value="phone" id="cont_pref2"> 
+                        <label for="cont_pref2">By Phone</label>
+                    </div>
+                </div> 
+                <div class="input_group">
+                    <p>Weekly Newsletter:</p>
+                    <div>
+                        <input type="radio" name="newsletter" value="yes" id="newsletter1" checked> 
+                        <label for="newsletter1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="newsletter" value="no" id="newsletter2"> 
+                        <label for="newsletter2">No</label>
+                    </div>
+                </div> 
+                <div class="input_group">
+                    <label for="extra_notes">Your Message: </label> <br>
+                    <textarea name="extra_notes" id="extra_notes" cols="30" rows="7"></textarea>
+                </div>     
+                <div class="contact_subre"> 
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        
+    </main>
+
+    <footer class="footer">
+        <div class="Info-footer">
+            <h2>Fre-Access</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Fiction.html">Fiction</a></li>
+                <li><a href="Non-Fiction.html">Non-Fiction</a></li>
+            </ul>
+        </div> 
+        <div class="Info-footer">
+            <h2>About Us</h2>
+            <ul>                   
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+        <div class="Info-footer">
+            <h2>Get help</h2>
+            <ul>                   
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Suggestions</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="Info-footer">
+            <h2>Follow us</h2>
+            <div class="social-link" >
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>    
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
