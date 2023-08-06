@@ -262,8 +262,9 @@ h2{
 
 /*contact*/
 .background_contact {
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .background_contact h1{
@@ -343,8 +344,10 @@ h2{
     }
     .category {
         margin-bottom: 40px;
-    }
+    }    
     .container iframe {
+        width: 100%;
+        height: auto;
         margin-bottom: 40px;
     }
 }
@@ -364,19 +367,26 @@ h2{
         position: relative;
         padding: 15px 20px;
     }
+    .book_detail img{
+        margin-right: 0px;
+
+    }
     .sub_img {
         display: flex;
-        justify-content: flex-start;      
+        justify-content: flex-start;     
+        flex-wrap: nowrap; 
     }
     .sub_img img{
+        width: 100px;
+        height: auto;
         margin: 0px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*contact us*/
     .input_group {
-      flex-direction: column; 
-      align-items: center; 
+        flex-direction: column; 
+        align-items: center; 
     }
 }
   
