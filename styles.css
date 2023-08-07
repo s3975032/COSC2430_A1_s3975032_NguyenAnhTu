@@ -89,6 +89,7 @@ h2{
 .category {
     background-color: white;
     width: 250px;
+    margin-bottom: 40px;
 }
 
 .category img {
@@ -115,6 +116,10 @@ h2{
 
 .category p{
     padding-left: 10px;
+}
+
+.container iframe {
+    margin-bottom: 40px;
 }
 
 .money{
@@ -342,9 +347,6 @@ h2{
         padding: 0 30px;
         align-items: center;
     }
-    .category {
-        margin-bottom: 40px;
-    }    
     .container iframe {
         width: 100%;
         height: auto;
