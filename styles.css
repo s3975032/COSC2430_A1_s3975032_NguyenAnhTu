@@ -65,9 +65,6 @@ body{
 }
 
 /*main*/
-main {
-    flex: 1;
-}
 
 a{
     text-decoration: none;
@@ -155,6 +152,7 @@ h2{
 }
 .Info-footer a:hover{
     color: #E5890A;
+    text-decoration: underline;
 }
 
 .social-link a{
@@ -162,6 +160,18 @@ h2{
     padding: 5px;
 }
 
+.specific-infoFooter>p{
+    margin-bottom: 20px;
+}
+.specific-infoFooter>h1{
+    text-align: center;
+}
+.specific-infoFooter>ul{
+    list-style: none;
+}
+.specific-infoFooter>ul li{
+    margin-bottom: 5px;
+}
 
 /*Detail page*/
 .book_detail {
